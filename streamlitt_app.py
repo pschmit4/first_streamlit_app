@@ -42,8 +42,10 @@ my_cur = my_cnx.cursor()
 my_cur.execute("SELECT * from fruit_load_list")
 my_data_row = my_cur.fetchone()
 #streamlit.text("Hello from Snowflake:")
-streamlit.text("The fruitLoadList contains:")
-streamlit.text(my_data_row)
+#streamlit.text("The fruitLoadList contains:")
+#streamlit.text(my_data_row)
+streamlit.header("The fruitLoadList contains:")
+streamlit.dataframe(my_data_row)
 
 
 
