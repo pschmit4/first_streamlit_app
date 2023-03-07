@@ -72,7 +72,7 @@ streamlit.stop()
 
 
 # my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-ä my_cur = my_cnx.cursor()
+# my_cur = my_cnx.cursor()
 #my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 ämy_cur.execute("SELECT * from fruit_load_list")
 #my_data_row = my_cur.fetchone()
@@ -80,11 +80,11 @@ streamlit.stop()
 #streamlit.text("Hello from Snowflake:")
 #streamlit.text("The fruitLoadList contains:")
 #streamlit.text(my_data_row)
-streamlit.header("The fruitLoadList contains:")
-streamlit.dataframe(my_data_rows)
+#streamlit.header("The fruitLoadList contains:")
+#streamlit.dataframe(my_data_rows)
 
-add_my_fruit = streamlit.text_input('What fruit to add?','Kiwi')
-streamlit.write('The user entered ', add_my_fruit)
+#add_my_fruit = streamlit.text_input('What fruit to add?','Kiwi')
+#streamlit.write('The user entered ', add_my_fruit)
 
 
 
