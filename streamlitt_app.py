@@ -36,7 +36,7 @@ streamlit.header("Fruityvice Fruit Advice!")
       # write your own comment - what does this do?
       streamlit.dataframe(fruityvice_normalized)
    except URLError as e:
-      stremlit.error()
+      streamlit.error()
 
 
 
